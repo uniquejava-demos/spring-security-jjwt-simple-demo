@@ -2,7 +2,7 @@ We will use jjwt in this demo, we will use nimbus-jose in future demo as jjwt is
 
 based on this tutorial [Spring Security: Authentication Architecture Explained in Depth](https://youtu.be/ElY3rjtukig)
 
-But I updated the code with latest spring security 5.7 changes.
+But I changed a lot of code to reflect spring security 5.7 updates.
 
 ## Environment
 
@@ -18,7 +18,7 @@ But I updated the code with latest spring security 5.7 changes.
 
 We will use the following:
 
-1. built-in AuthenticationManager(we just need to expose it, set our own UserDetailsService)
+1. ~~built-in~~ Custom AuthenticationManager
 2. built-in DaoAuthenticationProvider
 3. custom UserDetailsService
 4. Define our own JwtTokenFilter, add it before UsernamePasswordAuthenticationFilter
